@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="./js/script.js"></script>
+        <title>Admissions</title>
+        <style>
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+            }
+            nav ul li a:hover{
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+
+            <ul class="navbar justify-content-center bg-dark" style="list-style: none;">
+                <li class="navitem"><a href=# class="nav-link">Home</a></li>
+                <li class="navitem"><a href=# class="nav-link">Campus</a></li>
+                <li class="navitem"><a href=# class="nav-link">Facilities</a></li>
+                <li class="navitem"><a href=# class="nav-link">Events</a></li>
+                <li class="navitem"><a href=# class="nav-link">Courses</a></li>
+                <li class="navitem"><a href=# class="nav-link">Placements</a></li>
+                <li class="navitem"><a href=# class="nav-link">Alumini</a></li>
+                <li class="navitem"><a href=# class="nav-link">Admission</a></li>
+                <li class="navitem"><a href=# class="nav-link">Login/ Signup</a></li>
+                <li class="navitem"><a href=# class="nav-link">About us</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="justify-content-center">
+                <h1>Admission</h1>
+            </div>
+            <form id="admissionForm">
+                <div class="form-group">
+                    <label for="inputName">Enter Name</label>
+                    <input type="name" class="form-control" id="userName" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <label for="InputEmail">Enter Email</label>
+                    <input type="email" class="form-control" id="userEmail" placeholder="abc@xyz.com">
+                </div>
+                <div class="form-group">
+                    <label for="inputPhone">Enter Contact No.</label>
+                    <input type="number" class="form-control" id="userCont" placeholder="XXXXXXXXXX">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address<span class="star">*</span></label>
+                    <input type="text" class="form-control" id="userAddress" 
+                    placeholder="Enter Address">
+                </div>
+                <div class="form-group">
+                    <label for="coursesDrop">Please select a course</label>
+                    <select class="form-control" id="CoursesDropDown">
+                      <option>Select Department</option>
+                      <option>BSc.</option>
+                      <option>B.tech</option>
+                      <option>B.Arch</option>
+                      <option>BCA</option>
+                      <option>BBA</option>
+                    </select>
+                  </div>
+                  <button type="button" class="btn btn-primary" onclick="signup()">Signup</button>
+                  <button type="button" class="btn btn-secondary" onclick="reset()">Reset</button>
+            </form>
+        </div>
+        <br><br>
+        <footer class="py-4 bg-dark text-white-50">
+            <div class="row" style="padding :15px;">
+      <div class="col-md-6 mb-4">
+        <h3 class="text-uppercase font-weight-bold">Osaka University</h3>
+        <p>A state of the art University following international standards of education.</p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3>Signup to our newsletter</h3>
+        <form class="input-group">
+          <input type="email" class="form-control form-control-sm" placeholder="Your email"
+            aria-label="Your email" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button type="button">Sign up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+        </footer>  
+    </body>
+</html>
