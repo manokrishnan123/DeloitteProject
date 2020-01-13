@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxe2CYvduSII2v5ynQO6Bs2aKzu2TMF2U&callback=initMap" async defer></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxe2CYvduSII2v5ynQO6Bs2aKzu2TMF2U&libraries=places"></script>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="text/js" href="./css/master.css">
+<link rel="stylesheet" href="./css/animate.css">
+<script src="js/custom.js"></script>
+<style media="screen">
+  .card{
+    animation:fadeInLeft 2s;
+    webkit- animation:fadeInLeft 2s;
+  }
+</style>
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+<div id="loader">
+</div>
+<div style="display:none;" id="headerPart" class="animate-bottom">
+  <div id="homeSlider" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#homeSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#homeSlider" data-slide-to="1"></li>
+    <li data-target="#homeSlider" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/blrcampus.jpg" alt="Los Angeles" class="sliderImg">
+      <div class="carousel-caption">
+        <div class="typewriter">
+          <h1>Osaka University</h1>
+        </div>
+        <h2>Spreading the light of knowledge.</h2>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/oxford.jpg" alt="Chicago" class="sliderImg">
+      <div class="carousel-caption">
+        <h1>Stanford Campus</h1>
+        <p>International Campus</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/stanford.jpg" alt="New York" class="sliderImg">
+      <div class="carousel-caption">
+        <h1>Bangalore Campus</h1>
+        <p>Now in India</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#homeSlider" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#homeSlider" data-slide="next">
+    <span class="carousel-control-next-icon"></span>  </a>
+</div>
+<ul class="navbar justify-content-center bg-dark sticky-top">
+  <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+  <li class="nav-item"><a href="#Campus" class="nav-link">Campuses</a></li>
+  <li class="nav-item"><a href="#Contact" class="nav-link">Facilities</a></li>
+  <li class="nav-item"><a href="#Contact" class="nav-link">Events</a></li>
+  <li class="nav-item"><a href="#Contact" class="nav-link">Courses</a></li>
+  <li class="nav-item"><a href="#Contact" class="nav-link">Placements</a></li>
+  <li class="nav-item"><a href="./admission.html" class="nav-link">Admission</a></li>
+  <li class="nav-item"><a href="#About Us" class="nav-link">About Us</a></li>
+  <li class="nav-item"><a href="#About Us" class="nav-link">LogIn / Sign Up</a></li>
+</ul>
+</div>
+<div style="display:none;" id="main-description" class="animate-bottom">
+  <div class="card mb-3">
+  <div class="card-body css-typing">
+    <h5 class="card-title">Osaka University</h5>
+    <p class="card-text">Osaka University, a national university founded in 1931 by the Japanese Government with strong support from local governments in the Osaka area,
+      was established with the aim of creating a</p>
+      <p>higher-education center inheriting the liberal and progressive academic tradition of the area, which had been the center of trade of the nation for many centuries.</p>
+    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+  </div>
+</div>
+</div>
+<div style="display:none;" id="content1" class="animate-bottom">
+  <div class="">
+      <div class="card-deck" >
+        <div class="card fadeInLeft">
+          <img src="./img/oxford.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Stanford Campus</h4>
+            <p class="card-text">Study in a world class fcility.</p>
+          </div>
+        </div>
+        <div class="card animated fadeInLeft">
+          <img src="./img/stanford.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Havard Campus</h4>
+            <p class="card-text">Study along with International Students</p>
+          </div>
+        </div>
+        <div class="card animated fadeInRight">
+          <img src="./img/blrcampus.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Bangalore Campus</h4>
+            <p class="card-text">We're here in India too.</p>
+          </div>
+        </div>
+        <div class="card animated fadeInRight">
+          <img src="./img/tokyo.jpg" alt="" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h4 class="card-title">Tokyo Campus</h4>
+            <p class="card-text">Learn in a world class facility</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<br><br>
+<div style="display:none;" id="content2"class="slideInLeft">
+  <div class="container-fluid" style="margin:2px;">
+  <div class="row hidden-xs">
+    <div class="col-sm-4 background-yellow" align="center">
+      <h3>4</h3>
+      <h4>Campuses</h4>
+    </div>
+    <div class="col-sm-4 background-black" align="center">
+      <h3>25,000+</h3>
+      <h4>Global Students</h4>
+    </div>
+    <div class="col-sm-4 background-blue" align="center">
+      <h3>20,000+</h3>
+      <h4>Students placed world wide</h4>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div style="display:none;" id="content3"class="slideInLeft">
+    <div class="container-fluid" style="margin:2px;">
+    <div class="row hidden-xs">
+    <div class="col-sm-4 background-yellow" align="center">
+      <h2>4</h2>
+      <h4>Countries</h4>
+    </div>
+    <div class="col-sm-4 background-black" align="center">
+      <h2>5,000+</h2>
+      <h4>International Students</h4>
+    </div>
+    <div class="col-sm-4 background-blue" align="center">
+      <h2>600+</h2>
+      <h4>Working profiles</h4>
+    </div>
+  </div>
+  </div>
+</div>
+<br><br>
+
+<!--The div element for the map -->
+<div style="display:none;" id="map"class="slideInRight container-fluid">
+  <h3 id="map">Our locations world wide</h3>
+  <div id="map">
+
+  </div>
+</div>
+<br><br>
+<!-- Replace the value of the key parameter with your own API key. -->
+
+<div style="display:none;" id="footer"class="slideInLeft">
+  <footer class="py-4 bg-dark text-white-50">
+    <div class="row" style="padding :15px;">
+      <div class="col-md-6 mb-4">
+        <h3 class="text-uppercase font-weight-bold">Osaka University</h3>
+        <p>A state of the art University following international standards of education.</p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3>Signup to our newsletter</h3>
+        <form class="input-group">
+          <input type="text" class="form-control form-control-sm" placeholder="Your email"
+            aria-label="Your email" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button type="button">Sign up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
